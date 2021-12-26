@@ -126,3 +126,33 @@ a {
 .weather-temperature .active:hover {
   text-decoration: none;
 }
+
+.weather-forecast-date {
+  color: black;
+  font-weight: bold;
+  text-align: center;
+}
+
+.weather-forecast {
+  display: inline;
+  text-align: center;
+  padding: 0px;
+}
+
+.weather-forecast .col-2 {
+  border: 1px solid #93deff;
+  border-radius: 10px;
+  word-spacing: 10px;
+  background-color: white;
+  margin: 1%;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.weather-forecast .col-2:hover {
+  padding: 5px;
+  transition: all 200ms ease-in-out;
+}
+
+.weather-forecast-temperature-max {
+  font-weight: bold;
+}
