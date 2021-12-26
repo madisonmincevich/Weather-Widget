@@ -118,7 +118,7 @@ form.addEventListener("submit", handleSubmit);
 function retrievePosition(position) {
   let latitude = position.coords.latitude;
   let longitude = position.coords.longitude;
-  let units = "metric";
+  let units = "imperial";
   let apiKey = "4603cd08f9aa4435f5a1a0fde738051c";
   let apiEndPoint = "https://api.openweathermap.org/data/2.5/weather?";
   let apiUrl = `${apiEndPoint}lat=${latitude}&lon=${longitude}&units=${units}&appid=${apiKey}`;
