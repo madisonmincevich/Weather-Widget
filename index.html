@@ -31,18 +31,18 @@
         <div class="weather-app">
           <div class="row">
             <div class="col-7">
-              <h1>New York</h1>
+              <h1 id="city"></h1>
               <ul>
-                <li>Humidity: 30%</li>
-                <li>Wind: 2 km/h</li>
-                <li>Clear</li>
+                <li>Humidity: <span id="humidity"></span>%</li>
+                <li>Wind: <span id="wind"></span> km/h</li>
+                <li id="description"></li>
               </ul>
             </div>
             <div class="col-5">
               <div class="row">
                 <div class="col-12">
                   <span class="area">
-                    <span class="today"> Saturday 10:15 </span>
+                    <span id="date"></span>
                     <div class="clearfix weather-temperature">
                       <img
                         src="https://ssl.gstatic.com/onebox/weather/48/sunny.png"
@@ -50,7 +50,7 @@
                         id="icon"
                         class="float-left"
                       />
-                      <strong id="current-temp">70</strong>
+                      <strong id="current-temp"></strong>
                       <span class="units">°F | °C</span>
                     </div>
                   </span>
@@ -58,6 +58,8 @@
               </div>
             </div>
           </div>
+          <br />
+          <br />
           <br />
           <form id="search-form">
             <div class="row">
