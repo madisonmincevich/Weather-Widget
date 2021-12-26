@@ -112,3 +112,17 @@ small {
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
   background: #93deff;
 }
+
+a {
+  color: #93deff;
+  text-decoration: none;
+}
+
+.weather-temperature .active {
+  color: black;
+  cursor: default;
+}
+
+.weather-temperature .active:hover {
+  text-decoration: none;
+}

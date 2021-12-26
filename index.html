@@ -51,7 +51,10 @@
                         class="float-left"
                       />
                       <strong id="current-temp"></strong>
-                      <span class="units">°F | °C</span>
+                      <span class="units"
+                        ><a href="#" id="fahrenheit-link" class="active">°F</a>
+                        | <a href="#" id="celsius-link">°C</a></span
+                      >
                     </div>
                   </span>
                 </div>
@@ -68,13 +71,14 @@
                   type="search"
                   placeholder="Search for your city..."
                   class="form-control"
+                  id="city-input"
                 />
               </div>
               <div class="col-2">
                 <input type="submit" value="Search" class="btn btn-primary" />
               </div>
               <div class="col-2">
-                <button type="submit" class="btn btn-location">
+                <button type="submit" class="btn btn-location" id="liveLocate">
                   <i class="fas fa-search-location"></i>
                 </button>
               </div>
