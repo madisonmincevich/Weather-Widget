@@ -14,6 +14,14 @@
       src="https://kit.fontawesome.com/b006aebb1e.js"
       crossorigin="anonymous"
     ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
     <link rel="stylesheet" href="src/style.css" />
     <title>Document</title>
   </head>
@@ -27,22 +35,30 @@
               <ul>
                 <li>Humidity: 30%</li>
                 <li>Wind: 2 km/h</li>
-                <li>Saturday 10:15</li>
+                <li>Clear</li>
               </ul>
             </div>
             <div class="col-5">
               <div class="row">
                 <div class="col-12">
-                  <img
-                    src="https://ssl.gstatic.com/onebox/weather/48/sunny.png"
-                    alt="Clear"
-                  />
-                  <br />
-                  <strong id=current-temp">70</strong>°F | °C
+                  <span class="area">
+                    <span class="today"> Saturday 10:15 </span>
+                    <div class="clearfix weather-temperature">
+                      <img
+                        src="https://ssl.gstatic.com/onebox/weather/48/sunny.png"
+                        alt="Clear"
+                        id="icon"
+                        class="float-left"
+                      />
+                      <strong id="current-temp">70</strong>
+                      <span class="units">°F | °C</span>
+                    </div>
+                  </span>
                 </div>
               </div>
             </div>
           </div>
+          <br />
           <form id="search-form">
             <div class="row">
               <div class="col-8">
@@ -64,9 +80,17 @@
           </form>
         </div>
         <small>
-            <a href="#" target="_blank">Open-source code</a> by Maddie Mincevich
+          <a
+            href="https://github.com/madisonmincevich/Weather-Widget"
+            target="_blank"
+            >Coded</a
+          >
+          with
+          <i class="fas fa-heart"></i>
+          by Maddie Mincevich
         </small>
       </div>
     </div>
+    <script src="src/index.js"></script>
   </body>
 </html>

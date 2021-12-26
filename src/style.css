@@ -1,16 +1,41 @@
 body {
-  font-family: arial, sans-serif;
+  font-family: "Montserrat", sans-serif;
+  background-image: url(https://media4.giphy.com/media/ToMjGpAWqvtLXLemUzm/giphy.gif?cid=ecf05e477e1y0ryhptlsqqqq7y2lwfh09sy1w4httugdb83z&rid=giphy.gif&ct=g);
+  background-size: cover;
 }
 
 .weather-app-wrapper {
   max-width: 600px;
   margin: 30px auto;
+  position: relative;
+  top: 200px;
 }
 
 .weather-app {
-  padding: 20px;
-  border: 1px solid #dadde1;
+  padding: 30px;
+  border: 1px solid rgb(4, 78, 116) 107.5%;
   border-radius: 5px;
+  background: linear-gradient(
+    111.5deg,
+    rgb(187, 232, 255) 11.1%,
+    rgb(4, 78, 116) 107.5%
+  );
+
+  margin: 0 auto;
+}
+
+.weather-temperature img {
+  margin-right: 5px;
+  height: 64px;
+  width: 64px;
+}
+
+.area {
+  color: black;
+  text-align: center;
+  display: inline-block;
+  padding: 10px;
+  position: fixed;
 }
 
 h1 {
@@ -36,7 +61,48 @@ li {
   font-size: 15px;
 }
 
-strong {
-  font-size: 30px;
+.weather-temperature strong {
+  color: rgb(33, 33, 33);
+  font-size: 50px;
+  line-height: 1;
+  font-weight: 400;
   text-align: center;
+  vertical-align: middle;
+}
+
+.weather-temperature .units {
+  position: relative;
+  font-size: 15px;
+  top: -20px;
+  vertical-align: baseline;
+  color: #93deff;
+}
+
+.today {
+  font-size: 25px;
+}
+
+small {
+  color: white;
+}
+
+.btn-primary {
+  background: rgb(187, 232, 255) 11.1%;
+  color: black;
+  border-color: #a7d7f0;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.btn-primary:hover {
+  background: rgb(4, 78, 116) 107.5%;
+  border-color: #175e83;
+}
+
+.form-control {
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.btn-location {
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
+  background: #93deff;
 }
