@@ -8,11 +8,11 @@ body {
   max-width: 600px;
   margin: 30px auto;
   position: relative;
-  top: 200px;
+  top: 100px;
 }
 
 .weather-app {
-  padding: 30px;
+  padding: 50px;
   border: 1px solid rgb(4, 78, 116) 107.5%;
   border-radius: 5px;
   background: linear-gradient(
