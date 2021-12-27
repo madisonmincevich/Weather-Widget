@@ -34,9 +34,14 @@ body {
   color: black;
   text-align: center;
   display: inline-block;
-  padding: 10px;
+  padding: 0px;
   position: fixed;
   font-size: 30px;
+  line-height: 20px;
+}
+
+.updated {
+  font-size: 15px;
 }
 
 h1 {
