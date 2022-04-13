@@ -35,7 +35,7 @@ body {
   text-align: center;
   display: inline-block;
   padding: 0px;
-  position: fixed;
+
   font-size: 30px;
   line-height: 20px;
 }
@@ -160,4 +160,13 @@ a {
 
 .weather-forecast-temperature-max {
   font-weight: bold;
+}
+
+@media (max-width: 650px) {
+  input {
+    margin-bottom: 10px;
+  }
+  .btn {
+    margin-bottom: 10px;
+  }
 }
